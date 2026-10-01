@@ -100,9 +100,17 @@ fn move_enemies(
     let player = player.translation.xy();
 
     for (mut e_forces, e_transform) in &mut enemies {
-        let e = e_transform.translation.xy();
-        let diff = (player - e).normalize();
+        let forward: Vec2 = (e_transform.rotation * Vec3::Y).xy();
+        let to_player = (player - e_transform.translation.xy()).normalize();
+        let forward_dot = forward.dot(to_player);
+        let right: Vec2 = (e_transform.rotation * Vec3::X).xy();
+        let sign = -right.dot(to_player).signum();
+        let max_angle = forward_dot.clamp(-1.0, 1.0).acos();
+        *e_forces.linear_velocity_mut() = e_forces
+            .linear_velocity()
+            .rotate_towards(forward, max_angle);
+        // e_forces.apply_angular_impulse((sign * 5.3).min(max_angle));
 
-        e_forces.apply_linear_impulse(diff * 2024.0);
+        e_forces.apply_linear_impulse(forward * 2048.0);
     }
 }
