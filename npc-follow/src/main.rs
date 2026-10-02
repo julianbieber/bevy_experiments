@@ -1,7 +1,10 @@
 use avian2d::prelude::*;
 use bevy::{
+    asset::RenderAssetUsages,
     color::palettes::css::{BLUE_VIOLET, GREEN_YELLOW},
     prelude::*,
+    render::render_resource::{Extent3d, TextureDimension, TextureFormat},
+    sprite_render::{TileData, TilemapChunk, TilemapChunkTileData},
 };
 
 fn main() -> AppExit {
@@ -10,7 +13,7 @@ fn main() -> AppExit {
         .add_plugins(PhysicsPlugins::default())
         // .add_plugins(PhysicsDebugPlugin)
         .insert_resource(Gravity::ZERO)
-        .add_systems(Startup, startup)
+        .add_systems(Startup, (startup, spawn_backgrund_tilemap))
         .add_systems(Update, follow_camera)
         .add_systems(FixedUpdate, (move_player, move_enemies))
         .run()
@@ -106,11 +109,57 @@ fn move_enemies(
         let right: Vec2 = (e_transform.rotation * Vec3::X).xy();
         let sign = -right.dot(to_player).signum();
         let max_angle = forward_dot.clamp(-1.0, 1.0).acos();
-        *e_forces.linear_velocity_mut() = e_forces
-            .linear_velocity()
-            .rotate_towards(forward, max_angle);
-        // e_forces.apply_angular_impulse((sign * 5.3).min(max_angle));
+        if e_forces.linear_velocity().length_squared() > 0.0 {
+            *e_forces.linear_velocity_mut() = e_forces
+                .linear_velocity()
+                .rotate_towards(forward, sign * max_angle);
+        }
+        e_forces.apply_angular_impulse((sign * 60000.3));
 
         e_forces.apply_linear_impulse(forward * 2048.0);
     }
+}
+
+fn spawn_backgrund_tilemap(mut commands: Commands, mut images: ResMut<Assets<Image>>) {
+    let mut tilemap_data: Vec<Option<TileData>> = Vec::new();
+    for y in 0..32 {
+        for x in 0..32 {
+            tilemap_data.push(Some(TileData::from_tileset_index((x * y + 3) % 4)))
+        }
+    }
+    commands.spawn((
+        TilemapChunk {
+            chunk_size: uvec2(32, 32),
+            tile_display_size: uvec2(128, 128) * 8,
+            tileset: images.add(generate_background_image()),
+            alpha_mode: bevy::sprite_render::AlphaMode2d::Opaque,
+        },
+        TilemapChunkTileData(tilemap_data),
+    ));
+}
+
+fn generate_background_image() -> Image {
+    let mut data = Vec::with_capacity(8 * 8 * 4 * 4);
+    for y in 0..8 {
+        for x in 0..8 * 4 {
+            data.push((x + 80) * (y + 2));
+            data.push(x * y * 32);
+            data.push(x * y * 67);
+            data.push(255);
+        }
+    }
+    let mut image = Image::new(
+        Extent3d {
+            width: 8,
+            height: 8 * 4,
+            depth_or_array_layers: 1,
+        },
+        TextureDimension::D2,
+        data,
+        TextureFormat::Rgba8Unorm,
+        RenderAssetUsages::all(),
+    );
+    image.reinterpret_stacked_2d_as_array(4).unwrap();
+
+    image
 }
