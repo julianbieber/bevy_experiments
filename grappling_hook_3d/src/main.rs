@@ -121,17 +121,27 @@ fn player_movement(
 ) {
     let mut player = player.into_inner();
     let camera = camera.into_inner();
+    let mut forward = camera.forward().with_y(0.0);
+    if forward.length_squared() == 0.0 {
+        return;
+    }
+    forward = forward.normalize();
+    let mut right = camera.right().with_y(0.0);
+    if right.length_squared() == 0.0 {
+        return;
+    }
+    right = right.normalize();
 
     if keys.pressed(KeyCode::KeyW) {
-        player.apply_linear_impulse(camera.forward().as_vec3());
+        player.apply_linear_impulse(forward);
     }
     if keys.pressed(KeyCode::KeyS) {
-        player.apply_linear_impulse(-camera.forward().as_vec3());
+        player.apply_linear_impulse(-forward);
     }
     if keys.pressed(KeyCode::KeyA) {
-        player.apply_linear_impulse(-camera.right().as_vec3());
+        player.apply_linear_impulse(-right);
     }
     if keys.pressed(KeyCode::KeyD) {
-        player.apply_linear_impulse(camera.right().as_vec3());
+        player.apply_linear_impulse(right);
     }
 }
