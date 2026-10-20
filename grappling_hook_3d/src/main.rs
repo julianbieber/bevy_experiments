@@ -6,20 +6,30 @@ fn main() -> AppExit {
         .add_plugins(DefaultPlugins)
         .add_plugins(PhysicsPlugins::default())
         .add_systems(Startup, spawn_world)
-        .add_systems(Update, (sync_camera, camera_rotation))
+        .add_systems(
+            Update,
+            (
+                sync_camera,
+                camera_rotation,
+                shoot_grappling_hook,
+                drop_grappling_hook,
+            ),
+        )
         .add_systems(FixedUpdate, player_movement)
         .run()
 }
 
-fn spawn_world(mut commands: Commands) {
+fn spawn_world(mut commands: Commands, mut ambient: ResMut<GlobalAmbientLight>) {
     commands.spawn_scene(bsn! {
     template_value(Transform::from_scale(Vec3::splat(1.0)))
+    Visibility
     Children[
         {tunnel_z()}
     ]
     });
     commands.spawn_scene(player_scene());
     commands.spawn(Camera3d::default());
+    ambient.brightness = 0.0;
 }
 
 pub fn material_wall() -> impl Scene {
@@ -162,6 +172,55 @@ fn camera_rotation(
     if mouse_buttons.pressed(MouseButton::Right) {
         follow.rotation += mouse.delta.x * 0.01;
         follow.look_height -= mouse.delta.y * 0.01;
+    }
+}
+
+#[derive(Component)]
+struct GrapplingHook;
+
+fn shoot_grappling_hook(
+    camera: Single<&Transform, With<Camera>>,
+    player: Single<Entity, With<PlayerMarker>>,
+    mut commands: Commands,
+    spatial: SpatialQuery,
+    mouse: Res<ButtonInput<MouseButton>>,
+) {
+    if mouse.just_pressed(MouseButton::Left) {
+        if let Some(hit) = spatial.cast_ray(
+            camera.translation,
+            camera.forward(),
+            100.0,
+            true,
+            &SpatialQueryFilter::default(),
+        ) {
+            let hook = commands
+                .spawn((
+                    Transform::from_translation(
+                        camera.translation + camera.forward() * hit.distance,
+                    ),
+                    RigidBody::Static,
+                    GrapplingHook,
+                ))
+                .id();
+            commands.spawn((
+                DistanceJoint::new(hook, player.entity())
+                    .with_max_distance(hit.distance)
+                    .with_compliance(1.0 / 400000.0),
+                GrapplingHook,
+            ));
+        }
+    }
+}
+
+fn drop_grappling_hook(
+    q: Query<Entity, With<GrapplingHook>>,
+    mut commands: Commands,
+    keys: Res<ButtonInput<KeyCode>>,
+) {
+    if keys.just_pressed(KeyCode::Escape) {
+        for e in &q {
+            commands.entity(e).despawn();
+        }
     }
 }
 
