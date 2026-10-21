@@ -4,6 +4,7 @@ use bevy::{image::ImageLoaderSettings, input::mouse::AccumulatedMouseMotion, pre
 fn main() -> AppExit {
     App::new()
         .add_plugins(DefaultPlugins)
+        .insert_resource(ClearColor(Color::BLACK))
         .add_plugins(PhysicsPlugins::default())
         .add_systems(Startup, spawn_world)
         .add_systems(
@@ -145,7 +146,7 @@ fn player_scene() -> impl Scene {
         Mesh3d(asset_value(Sphere::new(1.0)))
         template_value(RigidBody::Dynamic)
         template_value(Collider::sphere(1.0))
-        MeshMaterial3d<StandardMaterial>(asset_value(Color::Srgba(Srgba::new(0.2, 0.1, 0.8, 1.0))))
+        MeshMaterial3d<StandardMaterial>(asset_value(Color::Srgba(Srgba::new(0.2, 0.1, 0.8, 0.4))))
         template_value(Transform::from_translation(Vec3::Y * 3.0))
         FollowCamera
     }
@@ -154,9 +155,18 @@ fn player_scene() -> impl Scene {
 fn sync_camera(
     target: Single<(&Transform, &FollowCamera), Without<Camera>>,
     mut camera: Single<&mut Transform, (With<Camera>, Without<FollowCamera>)>,
+    spatial: SpatialQuery,
 ) {
     let offset = Vec3::Y * 2.5 + Vec3::Z * 2.5;
     camera.translation = target.0.translation + offset.rotate_y(-target.1.rotation);
+    spatial.cast_shape(
+        &Collider::sphere(0.5),
+        origin,
+        shape_rotation,
+        direction,
+        config,
+        filter,
+    );
     // camera.translation = target.0.translation + offset;
     camera.look_at(
         target.0.translation + Vec3::Y * (1.4 + target.1.look_height),
