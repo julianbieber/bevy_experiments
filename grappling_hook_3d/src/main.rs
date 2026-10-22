@@ -14,6 +14,7 @@ fn main() -> AppExit {
                 camera_rotation,
                 shoot_grappling_hook,
                 drop_grappling_hook,
+                position_rope,
             ),
         )
         .add_systems(FixedUpdate, player_movement)
@@ -156,17 +157,21 @@ fn sync_camera(
     target: Single<(&Transform, &FollowCamera), Without<Camera>>,
     mut camera: Single<&mut Transform, (With<Camera>, Without<FollowCamera>)>,
     spatial: SpatialQuery,
+    player: Single<Entity, With<PlayerMarker>>,
 ) {
     let offset = Vec3::Y * 2.5 + Vec3::Z * 2.5;
     camera.translation = target.0.translation + offset.rotate_y(-target.1.rotation);
-    spatial.cast_shape(
-        &Collider::sphere(0.5),
-        origin,
-        shape_rotation,
-        direction,
-        config,
-        filter,
-    );
+    let lookat_target = target.0.translation + Vec3::Y * (1.4 + target.1.look_height);
+    let dir = Dir3::new_unchecked((camera.translation - lookat_target).normalize());
+    if let Some(hit) = spatial.cast_ray(
+        lookat_target,
+        dir,
+        2.5,
+        true,
+        &SpatialQueryFilter::DEFAULT.with_excluded_entities([player.into_inner()]),
+    ) {
+        camera.translation = lookat_target + dir * hit.distance;
+    }
     // camera.translation = target.0.translation + offset;
     camera.look_at(
         target.0.translation + Vec3::Y * (1.4 + target.1.look_height),
@@ -185,8 +190,14 @@ fn camera_rotation(
     }
 }
 
-#[derive(Component)]
+#[derive(Component, FromTemplate)]
 struct GrapplingHook;
+
+#[derive(Component, FromTemplate)]
+struct GrapplingHookHook;
+
+#[derive(Component, FromTemplate)]
+struct GrapplingHookRope(Entity);
 
 fn shoot_grappling_hook(
     camera: Single<&Transform, With<Camera>>,
@@ -210,8 +221,15 @@ fn shoot_grappling_hook(
                     ),
                     RigidBody::Static,
                     GrapplingHook,
+                    GrapplingHookHook,
                 ))
                 .id();
+            commands.spawn_scene(bsn! {
+                GrapplingHook
+                GrapplingHookRope(hook)
+                Mesh3d(asset_value(Cuboid::new(0.1, 1.0, 0.1)))
+                material_wall()
+            });
             commands.spawn((
                 DistanceJoint::new(hook, player.entity())
                     .with_max_distance(hit.distance)
@@ -219,6 +237,24 @@ fn shoot_grappling_hook(
                 GrapplingHook,
             ));
         }
+    }
+}
+
+fn position_rope(
+    mut rope: Query<
+        (&mut Transform, &GrapplingHookRope),
+        (Without<GrapplingHookHook>, Without<PlayerMarker>),
+    >,
+    hooks: Query<&Transform, With<GrapplingHookHook>>,
+    player: Single<&Transform, With<PlayerMarker>>,
+) {
+    for (mut rope, hook) in &mut rope {
+        let hook = hooks.get(hook.0).unwrap();
+        let distance = player.translation - hook.translation;
+        let center = hook.translation + distance * 0.5;
+        rope.rotation = Quat::from_rotation_arc(Vec3::Y, distance.normalize());
+        rope.scale = Vec3::new(1.0, distance.length(), 1.0);
+        rope.translation = center;
     }
 }
 
