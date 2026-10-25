@@ -1,0 +1,8 @@
+[package]
+name = "grappling_hook_3d"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+avian3d = "0.7.0"
+bevy = {version = "0.19.1", features = ["pbr_transmission_textures", "pbr_specular_textures", "pbr_multi_layer_material_textures", "pbr_anisotropy_texture"]}
