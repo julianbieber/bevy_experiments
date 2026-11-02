@@ -1,0 +1,9 @@
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/debug/build/ctrlc/d99b8e9407f1ce80/out/ctrlc-d99b8e9407f1ce80.d: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.2/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.2/src/error.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.2/src/platform/mod.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.2/src/platform/unix/mod.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.2/src/signal.rs
+
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/debug/build/ctrlc/d99b8e9407f1ce80/out/libctrlc-d99b8e9407f1ce80.rmeta: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.2/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.2/src/error.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.2/src/platform/mod.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.2/src/platform/unix/mod.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.2/src/signal.rs
+
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.2/src/lib.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.2/src/error.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.2/src/platform/mod.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.2/src/platform/unix/mod.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.2/src/signal.rs:

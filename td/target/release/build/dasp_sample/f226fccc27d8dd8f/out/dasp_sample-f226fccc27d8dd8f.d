@@ -1,0 +1,10 @@
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/release/build/dasp_sample/f226fccc27d8dd8f/out/dasp_sample-f226fccc27d8dd8f.d: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dasp_sample-0.11.0/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dasp_sample-0.11.0/src/conv.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dasp_sample-0.11.0/src/ops.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dasp_sample-0.11.0/src/types.rs
+
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/release/build/dasp_sample/f226fccc27d8dd8f/out/libdasp_sample-f226fccc27d8dd8f.rlib: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dasp_sample-0.11.0/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dasp_sample-0.11.0/src/conv.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dasp_sample-0.11.0/src/ops.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dasp_sample-0.11.0/src/types.rs
+
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/release/build/dasp_sample/f226fccc27d8dd8f/out/libdasp_sample-f226fccc27d8dd8f.rmeta: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dasp_sample-0.11.0/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dasp_sample-0.11.0/src/conv.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dasp_sample-0.11.0/src/ops.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dasp_sample-0.11.0/src/types.rs
+
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dasp_sample-0.11.0/src/lib.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dasp_sample-0.11.0/src/conv.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dasp_sample-0.11.0/src/ops.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dasp_sample-0.11.0/src/types.rs:

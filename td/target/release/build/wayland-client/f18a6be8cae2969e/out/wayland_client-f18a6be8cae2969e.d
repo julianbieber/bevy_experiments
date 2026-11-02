@@ -1,0 +1,10 @@
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/release/build/wayland-client/f18a6be8cae2969e/out/wayland_client-f18a6be8cae2969e.d: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-client-0.31.15/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-client-0.31.15/src/conn.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-client-0.31.15/src/event_queue.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-client-0.31.15/src/globals.rs
+
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/release/build/wayland-client/f18a6be8cae2969e/out/libwayland_client-f18a6be8cae2969e.rlib: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-client-0.31.15/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-client-0.31.15/src/conn.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-client-0.31.15/src/event_queue.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-client-0.31.15/src/globals.rs
+
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/release/build/wayland-client/f18a6be8cae2969e/out/libwayland_client-f18a6be8cae2969e.rmeta: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-client-0.31.15/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-client-0.31.15/src/conn.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-client-0.31.15/src/event_queue.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-client-0.31.15/src/globals.rs
+
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-client-0.31.15/src/lib.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-client-0.31.15/src/conn.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-client-0.31.15/src/event_queue.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wayland-client-0.31.15/src/globals.rs:

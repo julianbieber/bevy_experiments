@@ -1,0 +1,10 @@
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/release/build/lock_api/35eb3886a3579aef/out/lock_api-35eb3886a3579aef.d: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.14/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.14/src/mutex.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.14/src/remutex.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.14/src/rwlock.rs
+
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/release/build/lock_api/35eb3886a3579aef/out/liblock_api-35eb3886a3579aef.rlib: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.14/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.14/src/mutex.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.14/src/remutex.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.14/src/rwlock.rs
+
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/release/build/lock_api/35eb3886a3579aef/out/liblock_api-35eb3886a3579aef.rmeta: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.14/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.14/src/mutex.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.14/src/remutex.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.14/src/rwlock.rs
+
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.14/src/lib.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.14/src/mutex.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.14/src/remutex.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.14/src/rwlock.rs:

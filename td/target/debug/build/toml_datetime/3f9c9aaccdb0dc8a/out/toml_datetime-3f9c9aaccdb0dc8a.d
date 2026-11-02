@@ -1,0 +1,8 @@
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/debug/build/toml_datetime/3f9c9aaccdb0dc8a/out/toml_datetime-3f9c9aaccdb0dc8a.d: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_datetime-1.1.2+spec-1.1.0/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_datetime-1.1.2+spec-1.1.0/src/datetime.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_datetime-1.1.2+spec-1.1.0/src/de.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_datetime-1.1.2+spec-1.1.0/src/ser.rs
+
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/debug/build/toml_datetime/3f9c9aaccdb0dc8a/out/libtoml_datetime-3f9c9aaccdb0dc8a.rmeta: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_datetime-1.1.2+spec-1.1.0/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_datetime-1.1.2+spec-1.1.0/src/datetime.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_datetime-1.1.2+spec-1.1.0/src/de.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_datetime-1.1.2+spec-1.1.0/src/ser.rs
+
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_datetime-1.1.2+spec-1.1.0/src/lib.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_datetime-1.1.2+spec-1.1.0/src/datetime.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_datetime-1.1.2+spec-1.1.0/src/de.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_datetime-1.1.2+spec-1.1.0/src/ser.rs:

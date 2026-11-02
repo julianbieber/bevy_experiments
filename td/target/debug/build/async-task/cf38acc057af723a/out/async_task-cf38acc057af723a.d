@@ -1,0 +1,11 @@
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/debug/build/async-task/cf38acc057af723a/out/async_task-cf38acc057af723a.d: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-task-4.7.1/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-task-4.7.1/src/header.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-task-4.7.1/src/raw.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-task-4.7.1/src/runnable.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-task-4.7.1/src/state.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-task-4.7.1/src/task.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-task-4.7.1/src/utils.rs
+
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/debug/build/async-task/cf38acc057af723a/out/libasync_task-cf38acc057af723a.rmeta: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-task-4.7.1/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-task-4.7.1/src/header.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-task-4.7.1/src/raw.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-task-4.7.1/src/runnable.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-task-4.7.1/src/state.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-task-4.7.1/src/task.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-task-4.7.1/src/utils.rs
+
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-task-4.7.1/src/lib.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-task-4.7.1/src/header.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-task-4.7.1/src/raw.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-task-4.7.1/src/runnable.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-task-4.7.1/src/state.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-task-4.7.1/src/task.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-task-4.7.1/src/utils.rs:

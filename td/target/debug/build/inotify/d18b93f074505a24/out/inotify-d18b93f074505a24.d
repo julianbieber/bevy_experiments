@@ -1,0 +1,10 @@
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/debug/build/inotify/d18b93f074505a24/out/inotify-d18b93f074505a24.d: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inotify-0.11.5/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inotify-0.11.5/src/events.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inotify-0.11.5/src/fd_guard.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inotify-0.11.5/src/inotify.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inotify-0.11.5/src/util.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inotify-0.11.5/src/watches.rs
+
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/debug/build/inotify/d18b93f074505a24/out/libinotify-d18b93f074505a24.rmeta: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inotify-0.11.5/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inotify-0.11.5/src/events.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inotify-0.11.5/src/fd_guard.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inotify-0.11.5/src/inotify.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inotify-0.11.5/src/util.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inotify-0.11.5/src/watches.rs
+
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inotify-0.11.5/src/lib.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inotify-0.11.5/src/events.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inotify-0.11.5/src/fd_guard.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inotify-0.11.5/src/inotify.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inotify-0.11.5/src/util.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/inotify-0.11.5/src/watches.rs:

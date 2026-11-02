@@ -1,0 +1,9 @@
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/debug/build/hexasphere/d5dfdbd2f0dfc8e6/out/hexasphere-d5dfdbd2f0dfc8e6.d: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hexasphere-19.0.0/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hexasphere-19.0.0/src/interpolation.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hexasphere-19.0.0/src/math.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hexasphere-19.0.0/src/shapes.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hexasphere-19.0.0/src/slice.rs
+
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/debug/build/hexasphere/d5dfdbd2f0dfc8e6/out/libhexasphere-d5dfdbd2f0dfc8e6.rmeta: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hexasphere-19.0.0/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hexasphere-19.0.0/src/interpolation.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hexasphere-19.0.0/src/math.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hexasphere-19.0.0/src/shapes.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hexasphere-19.0.0/src/slice.rs
+
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hexasphere-19.0.0/src/lib.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hexasphere-19.0.0/src/interpolation.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hexasphere-19.0.0/src/math.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hexasphere-19.0.0/src/shapes.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hexasphere-19.0.0/src/slice.rs:

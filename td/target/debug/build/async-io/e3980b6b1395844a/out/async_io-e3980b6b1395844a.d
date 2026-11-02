@@ -1,0 +1,10 @@
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/debug/build/async-io/e3980b6b1395844a/out/async_io-e3980b6b1395844a.d: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-io-2.6.0/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-io-2.6.0/src/driver.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-io-2.6.0/src/reactor.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-io-2.6.0/src/os.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-io-2.6.0/src/os/unix.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-io-2.6.0/src/reactor/unix.rs
+
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/debug/build/async-io/e3980b6b1395844a/out/libasync_io-e3980b6b1395844a.rmeta: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-io-2.6.0/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-io-2.6.0/src/driver.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-io-2.6.0/src/reactor.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-io-2.6.0/src/os.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-io-2.6.0/src/os/unix.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-io-2.6.0/src/reactor/unix.rs
+
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-io-2.6.0/src/lib.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-io-2.6.0/src/driver.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-io-2.6.0/src/reactor.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-io-2.6.0/src/os.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-io-2.6.0/src/os/unix.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-io-2.6.0/src/reactor/unix.rs:

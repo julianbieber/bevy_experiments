@@ -1,0 +1,10 @@
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/debug/build/crc32fast/88ab5caa78d9776c/out/crc32fast-88ab5caa78d9776c.d: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc32fast-1.5.3/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc32fast-1.5.3/src/baseline.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc32fast-1.5.3/src/combine.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc32fast-1.5.3/src/specialized/mod.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc32fast-1.5.3/src/table.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc32fast-1.5.3/src/specialized/pclmulqdq.rs
+
+/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td/target/debug/build/crc32fast/88ab5caa78d9776c/out/libcrc32fast-88ab5caa78d9776c.rmeta: /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc32fast-1.5.3/src/lib.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc32fast-1.5.3/src/baseline.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc32fast-1.5.3/src/combine.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc32fast-1.5.3/src/specialized/mod.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc32fast-1.5.3/src/table.rs /home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc32fast-1.5.3/src/specialized/pclmulqdq.rs
+
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc32fast-1.5.3/src/lib.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc32fast-1.5.3/src/baseline.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc32fast-1.5.3/src/combine.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc32fast-1.5.3/src/specialized/mod.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc32fast-1.5.3/src/table.rs:
+/home/jbieber/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc32fast-1.5.3/src/specialized/pclmulqdq.rs:
