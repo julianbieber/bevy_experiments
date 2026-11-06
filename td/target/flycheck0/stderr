@@ -1,3 +1,0 @@
-warning: unused config key `unstable.min-publish-age` in `/home/jbieber/.cargo/config.toml`
-    Checking td v0.1.0 (/home/jbieber/fun_worktrees/bevy_experiments/experiment/basic_td/td)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.65s
